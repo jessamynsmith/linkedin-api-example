@@ -21,7 +21,7 @@ Create a Linkedin app:
 http://127.0.0.1:8000/accounts/linkedin_oauth2/login/callback/
 1. Note the "Client ID" and "Client Secret"
 
-In your clone of this app, edit linkedin.py, setting
+In your clone of this app, edit linkedin.py, setting CONSUMER_KEY and CONSUMER_SECRET to the values from your Linkedin app.
 
 Run server:
 
