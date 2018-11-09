@@ -11,10 +11,15 @@ app.secret_key = 'development'
 oauth = OAuth(app)
 
 
+# Set these values from the Linkedin app you created
+CONSUMER_KEY = '<LINKEDIN_KEY_HERE>'
+CONSUMER_SECRET = '<LINKEDIN_SECRET_HERE>'
+
+
 linkedin = oauth.remote_app(
     'linkedin',
-    consumer_key='<LINKEDIN_KEY_HERE>',
-    consumer_secret='<LINKEDIN_SECRET_HERE>',
+    consumer_key=CONSUMER_KEY,
+    consumer_secret=CONSUMER_SECRET,
     request_token_params={
         'scope': 'r_basicprofile',
         'state': 'RandomString',
